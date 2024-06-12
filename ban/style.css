@@ -1,0 +1,36 @@
+.avatar-container {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  max-width: 440px; /* Adjust based on the width and margin of avatar frames */
+  margin: auto; /* Center the container */
+  justify-content: flex-end;
+}
+
+.avatar-frame {
+  display: none;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #333;
+  margin: 5px;
+  box-sizing: border-box;
+  overflow: hidden; /* Ensures the image fits within the frame */
+  position: relative;
+}
+
+.avatar-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the frame without distorting */
+  position: absolute; /* Ensure the image stays within the frame */
+  top: 0;
+  left: 0;
+}
+
+.ban-icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: rgb(100, 100, 100);
+  font-size: 85px; /* Adjust the size as needed */
+  z-index: 1; /* Ensure the icon is above the image */
+}
